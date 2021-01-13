@@ -1,0 +1,4 @@
+CVE-2019-19814:
+  comment: "Not using btrfs"
+CVE-2019-19816:
+  comment: "Not using btrfs"
