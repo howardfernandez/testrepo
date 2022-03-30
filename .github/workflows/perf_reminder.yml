@@ -1,0 +1,17 @@
+name: Reminder to fill out performance change template
+
+on:
+  # label creation
+  label:
+    types: [created]
+
+jobs:
+  create_comment:
+    runs-on: ubuntu-latest
+    name: Create a comment
+    steps:
+      - name: Comment current pull request
+        uses: alawiii521/current-pr-comment@v1.0
+        with:
+          comment: "Hello Howie!"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
