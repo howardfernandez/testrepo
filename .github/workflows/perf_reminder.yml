@@ -1,7 +1,4 @@
-name: Reminder to fill out performance change template
-
 on:
-  # label creation
   label:
     types: [created]
 
