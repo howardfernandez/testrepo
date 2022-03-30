@@ -1,6 +1,6 @@
 on:
-  label:
-    types: [created]
+  pull_request:
+    types: [labelled]
 
 jobs:
   create_comment:
@@ -10,5 +10,5 @@ jobs:
       - name: Comment current pull request
         uses: alawiii521/current-pr-comment@v1.0
         with:
-          comment: "Hello Howie!"
+          comment: "I've been labelled!"
           GITHUB_TOKEN: ${{ secrets.HOWIE_GITHUB_TOKEN }}
