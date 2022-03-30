@@ -14,4 +14,4 @@ jobs:
         uses: alawiii521/current-pr-comment@v1.0
         with:
           comment: "Hello Howie!"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.HOWIE_GITHUB_TOKEN }}
