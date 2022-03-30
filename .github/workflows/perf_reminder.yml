@@ -10,5 +10,5 @@ jobs:
       - name: Comment current pull request
         uses: alawiii521/current-pr-comment@v1.0
         with:
-          comment: "I've been labelled!"
+          comment: "I've been labelled with '${{ github.event.label.name }}'!"
           GITHUB_TOKEN: ${{ secrets.HOWIE_GITHUB_TOKEN }}
