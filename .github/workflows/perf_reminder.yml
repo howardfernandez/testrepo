@@ -1,6 +1,6 @@
 on:
   pull_request:
-    types: [labelled]
+    types: [labeled]
 
 jobs:
   create_comment:
