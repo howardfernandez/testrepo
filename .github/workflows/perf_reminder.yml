@@ -4,8 +4,8 @@ on:
 
 jobs:
   create_comment:
+    if: ${{ contains(github.event.label.name, 'perf') }}
     runs-on: ubuntu-latest
-    name: Create a comment
     steps:
       - name: Comment current pull request
         uses: alawiii521/current-pr-comment@v1.0
