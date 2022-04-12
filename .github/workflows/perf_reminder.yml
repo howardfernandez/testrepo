@@ -4,7 +4,7 @@ on:
 
 jobs:
   create_comment:
-    if: github.event.label.name == "ci-detected-performance-change"
+    if: github.event.label.name == 'ci-detected-performance-change'
     runs-on: ubuntu-latest
     steps:
       - name: Comment current pull request
