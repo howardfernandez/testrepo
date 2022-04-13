@@ -10,5 +10,5 @@ jobs:
       - name: Comment current pull request
         uses: alawiii521/current-pr-comment@v1.0
         with:
-          comment: "@${{ github.event.pull_request.user.login }} :bell: This PR has been identified as containing one or more changes that have potential performance impacts. If you haven't already filled out the template to document the impact of these performance changes, you can find the template and more instructions [here](https://swift-nav.atlassian.net/wiki/spaces/ENG/pages/2170224786/Template+for+documenting+the+impact+of+performance+changes+to+Starling)"
+          comment: "@${{ github.event.pull_request.user.login }} :bell: This PR has been identified as containing one or more changes that have potential performance impacts. If you haven't already filled out the template to document the impact of these performance changes, you can find the template and additional instructions [here](https://swift-nav.atlassian.net/wiki/spaces/ENG/pages/2170224786/Template+for+documenting+the+impact+of+performance+changes+to+Starling)"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
